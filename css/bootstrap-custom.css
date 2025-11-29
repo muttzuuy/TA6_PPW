@@ -1,0 +1,84 @@
+:root {
+    --bs-body-bg: #F0F4F8; 
+    --bs-body-color: #3C4858; 
+    --bs-card-bg: #FFFFFF;
+    --bs-primary: #1976D2; 
+    --bs-primary-rgb: 25, 118, 210;
+    --bs-accent: #00BCD4;
+    --bs-accent-rgb: 0, 188, 212;
+    --gradient-light-start: #ECEFF1; 
+    --gradient-light-end: #FFFFFF;   
+    --bs-card-bg-rgb-glass: 255, 255, 255; 
+    --bs-light-rgb: 240, 244, 248; 
+    --bg-image-light: url('../assets/images/weather-bg-blur-light.jpg'); 
+    --bg-image-dark: url('../assets/images/weather-bg-blur-dark.jpg'); 
+}
+
+.dark-mode {
+    --bs-body-bg: #1B263B; 
+    --bs-body-color: #EAEAEA; 
+    --bs-card-bg: #21354C; 
+    --bs-primary: #4FC3F7; 
+    --bs-primary-rgb: 79, 195, 247;
+    --bs-accent: #80CBC4;
+    --gradient-dark-start: #2C3E50; 
+    --gradient-dark-end: #34495E;   
+    --bs-card-bg-rgb-glass: 33, 53, 76; 
+}
+
+.form-control {
+    background-color: rgba(var(--bs-card-bg-rgb-glass), 0.5) !important;
+    border: 1px solid rgba(var(--bs-card-bg-rgb-glass), 0.5) !important;
+    color: var(--bs-body-color) !important;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.form-control:focus {
+    background-color: rgba(var(--bs-card-bg-rgb-glass), 0.7) !important;
+    border-color: var(--bs-primary) !important;
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), .25) !important;
+}
+
+.dark-mode .form-control {
+    background-color: rgba(var(--bs-card-bg-rgb-glass), 0.6) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.dark-mode .card, 
+.dark-mode .list-group-item {
+    background-color: var(--bs-card-bg) !important;
+    color: var(--bs-body-color) !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.dark-mode .text-muted, 
+.dark-mode .h5, 
+.dark-mode .lead {
+    color: #B0B0B0 !important;
+}
+
+.dark-mode .btn-outline-secondary,
+.dark-mode .btn-outline-dark {
+    color: var(--bs-body-color);
+    border-color: var(--bs-body-color);
+}
+.dark-mode .btn-outline-secondary:hover,
+.dark-mode .btn-outline-dark:hover {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: var(--bs-card-bg); 
+}
+
+.dark-mode .list-group-item-action:hover {
+    background-color: rgba(var(--bs-primary-rgb), 0.1) !important;
+}
+
+.alert.alert-info {
+    background-color: rgba(var(--bs-accent-rgb), 0.1);
+    border-color: var(--bs-accent);
+    color: var(--bs-body-color);
+}
+.dark-mode .alert.alert-info {
+    background-color: rgba(var(--bs-primary-rgb), 0.1);
+    color: var(--bs-body-color);
+}
